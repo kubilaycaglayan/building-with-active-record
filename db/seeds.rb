@@ -7,11 +7,25 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-User.create(name: 'Kubilay')
-User.create(name: 'Marios')
+names = ['Kubilay','Marios','Jamilia','Teo','David Gilmour', 'Jimmy Page']
+names.each do |name|
+  User.create(name: name)
+end
+posts = {
+  'Led Zeppelin' => 'Stairway to Heaven',
+  'Pink Floyd' => 'Comfortably Numb',
+  'Radiohead' => 'Karma Police',
+  'Black Sabbath' => 'War Pigs',
+  'Black Sabbath' => 'Paranoid',
+  'Metallica' => 'Enter Sandman'
+}
 
-Post.create(title: 'Led Zeppelin', body: 'Stairway to Heaven', user_id: 1)
-Post.create(title: 'Pink Floyd', body: 'Comfortably Numb', user_id: 2)
+10.times do |index|
+  Post.create(title: posts.keys.to_a.sample, body: posts.values.to_a.sample, user_id: (1..6).to_a.sample)
+end
 
-Comment.create(body: 'Great Song!', user_id: 1, post_id: 2)
-Comment.create(body: 'Awesome!', user_id: 2, post_id: 1)
+comments = ['Great Song!','Awesome!','Guitar is so great!','Song of my life.','This band is awesome','Such a beautiful intro.','Look at the man who is holding the drum sticks.','Red guitar!','Nice','Super']
+
+10.times do |post_index|
+  Comment.create(body: comments.sample, user_id: (1..6).to_a.sample, post_id: post_index)
+end
