@@ -10,5 +10,8 @@
 User.create(name: 'Kubilay')
 User.create(name: 'Marios')
 
-Post.create(title: 'This is title Test', body: 'This is test body for post 1', user_id: 1)
-Post.create(title: 'This is title Test2', body: 'This is test body for post 2', user_id: 2)
+Post.create(title: 'Led Zeppelin', body: 'Stairway to Heaven', user_id: 1)
+Post.create(title: 'Pink Floyd', body: 'Comfortably Numb', user_id: 2)
+
+Comment.create(body: 'Great Song!', user_id: 1, post_id: 2)
+Comment.create(body: 'Awesome!', user_id: 2, post_id: 1)
