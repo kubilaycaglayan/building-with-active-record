@@ -16,16 +16,16 @@ Marios Kanellopoulos
 - [![Mariosknl is available for hire!](http://hireable.me/mariosknl)](http://hireable.me/p/mariosknl)
 
 Kubilay Caglayan
-- Github: [@kubilaycaglayan](https://github.com/mariosknl)
+- Github: [@kubilaycaglayan](https://github.com/kubilaycaglayan)
 - Twitter: [@kbcaglayan](https://twitter.com/kbcaglayan)
 - Linkedln: [kubilay-caglayan](https://www.linkedin.com/in/kubilaycaglayan/)
 
 # How to Run Code
-  clone repository
-  bundle install
-  rails db:migrate
-  rails db:seed
-  rails console
+- clone repository
+- bundle install
+- rails db:migrate
+- rails db:seed
+- rails console
 
 # Built With
 
@@ -37,7 +37,11 @@ VS Code
 Give a star if you like this project!
 
 # Acknowledgments
-The Odin project for the project plan
+- The Odin project for the project plan
+- https://edgeguides.rubyonrails.org/active_record_migrations.html
+- https://guides.rubyonrails.org/active_record_validations.html
+- https://guides.rubyonrails.org/association_basics.html
+- https://guides.rubyonrails.org/v3.2/migrations.html
 
 # License
 This project is MIT licensed
