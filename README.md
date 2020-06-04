@@ -1,7 +1,7 @@
 # BUILDING WITH ACTIVE RECORD
 
 In this project we are building with active record on Rails.
-Created with Model & Column & Association & Validation principals.
+Created with Model & Controller & View principals.
 
 # Notes
 - In our seed.rb file you will find dummy data.
